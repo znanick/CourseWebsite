@@ -1,0 +1,66 @@
+.sideMenuOutputItemContainer {
+  font-family: Helvetica;
+  .itemContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+    height: 60px;
+    color: #3e3e3e;
+
+    .text {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: left;
+    }
+
+    .activeText {
+      color: #259609;
+    }
+
+    .icon {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .itemContainer:hover {
+    color: #259609;
+    cursor: pointer;
+  }
+
+  .childBlock {
+    margin-left: 2%;
+    width: 95%;
+
+    .sideMenuInputItemBlock {
+      color: #3e3e3e;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 5px;
+      .text {
+        font-size: 14px;
+        margin-left: 10px;
+      }
+    }
+
+    .current {
+      background: rgba(37, 150, 9, 0.15);
+
+      color: #259609;
+      border-radius: 3px;
+    }
+  }
+}
+
+.sideMenuInputItemBlock:hover {
+  background: #f2f2f2;
+  border-radius: 3px;
+  cursor: pointer;
+}
